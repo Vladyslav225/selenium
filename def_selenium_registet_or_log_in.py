@@ -2,7 +2,6 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
 
-# text_email_error = 'This email address is already being used by another account. Use a different email.'
 
 
 driver = webdriver.Chrome(executable_path='/home/vladyslav/IT_Step/lesson_25-26/chromedriver')
@@ -31,11 +30,6 @@ def func_register():
           input_password_confirm = driver.find_element_by_id('password_confirm')
           input_password_confirm.send_keys('1995V|_ad@2021')
           input_password_confirm.send_keys(Keys.ENTER)
-
-          check_errors = driver.find_element_by_id('email-errors')
-          # print(check_errors.text)
-          # if text_email_error in check_errors:
-          #      print('buy')
 
      except Exception as ex:
           print(ex)
