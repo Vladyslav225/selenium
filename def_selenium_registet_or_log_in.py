@@ -51,7 +51,7 @@ def func_register():
 
 #           input_password = driver.find_element_by_id('password')
 #           input_password.clear()
-#           input_password.send_keys('1995V|_ad@2021')
+#           input_password.send_keys('')
           
 #           input_password.send_keys(Keys.ENTER)
 
