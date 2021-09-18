@@ -25,10 +25,10 @@ def func_register():
 
           input_password = driver.find_element_by_id('new_password')
           input_password.clear()
-          input_password.send_keys('1995V|_ad@2021')
+          input_password.send_keys('')
 
           input_password_confirm = driver.find_element_by_id('password_confirm')
-          input_password_confirm.send_keys('1995V|_ad@2021')
+          input_password_confirm.send_keys('')
           input_password_confirm.send_keys(Keys.ENTER)
 
      except Exception as ex:
@@ -36,7 +36,7 @@ def func_register():
 
      finally:
           time.sleep(5)
-          driver.close()
+          # driver.close()
 
 
 # def func_log_in():
