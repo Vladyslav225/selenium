@@ -16,7 +16,7 @@ def main_page():
           time.sleep(3)
 
           number_input_field = driver.find_element_by_id('phone_field')
-          number_input_field.send_keys('933832998')
+          number_input_field.send_keys('Input your phone number:')
 
           button_lod_in = driver.find_element_by_id('phoneEmailConfirmButton')
           button_lod_in.send_keys(Keys.RETURN)
