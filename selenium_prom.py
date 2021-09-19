@@ -84,6 +84,10 @@ def writing_comment():
      except Exception as ex:
           print(ex)
 
+     finally:
+          time.sleep(10)
+          driver.close()
+
 
 
 main_page()
