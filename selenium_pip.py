@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 
-driver = webdriver.Chrome(executable_path='/home/vladyslav/IT_Step/lesson_25-26/chromedriver')
+driver = webdriver.Chrome(executable_path='lesson_25-26/chromedriver')
 
 def func_register():
      try:
@@ -36,8 +36,7 @@ def func_register():
 
      finally:
           time.sleep(5)
-          # driver.close()
-
+          driver.close()
 
 # def func_log_in():
 
@@ -58,9 +57,9 @@ def func_register():
 #      except Exception as ex:
 #           print(ex)
 
-#      # finally:
-#      #      time.sleep(5)
-#      #      driver.close()
+#      finally:
+#           time.sleep(5)
+#           driver.close()
 
 
 # func_log_in()
