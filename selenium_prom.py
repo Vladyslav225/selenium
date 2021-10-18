@@ -7,32 +7,32 @@ driver = webdriver.Chrome(executable_path='/home/vladyslav/IT_Step/lesson_25-26/
 
 driver.get('https://prom.ua/')
 
-def main_page_search():
+# def main_page_search():
 
-     try:
+#      try:
 
-          search_term = driver.find_element_by_class_name('_3tZPe')
-          search_term.send_keys('Лицензионный ключ активации Windows 10 Pro + Ключ Office 2019 ProPlus')
-          search_term.send_keys(Keys.RETURN)
-          time.sleep(3)
+#           search_term = driver.find_element_by_class_name('_3tZPe')
+#           search_term.send_keys('Лицензионный ключ активации Windows 10 Pro + Ключ Office 2019 ProPlus')
+#           search_term.send_keys(Keys.RETURN)
+#           time.sleep(3)
 
-          products = driver.find_elements_by_class_name('_2KaCs.xuuH_._3y8C0')[1]
-          # print(products.text)
+#           products = driver.find_elements_by_class_name('_2KaCs.xuuH_._3y8C0')[1]
+#           # print(products.text)
 
-          products.send_keys(Keys.ENTER)
-          time.sleep(3)
+#           products.send_keys(Keys.ENTER)
+#           time.sleep(3)
 
-     except Exception as ex:
-          print(ex)
+#      except Exception as ex:
+#           print(ex)
 
 
-def writing_comment():
+# def writing_comment():
 
-     try:
+#      try:
      
-          comany_name = driver.find_elements_by_class_name('_2KaCs._2RuOC')
-          comany_name.send_keys(Keys.ENTER)
-          time.sleep(5)
+#           comany_name = driver.find_elements_by_class_name('_2KaCs._2RuOC')
+#           comany_name.send_keys(Keys.ENTER)
+#           time.sleep(5)
 
           # short_company_rating = driver.find_elements_by_class_name('_2KaCs._2RuOC')[1]
           # short_company_rating.send_keys(Keys.ENTER)
@@ -70,15 +70,15 @@ def writing_comment():
 # #           input_opinion_text = driver.find_element_by_class_name('_3Gj6W._1mkhj')
 # #           input_opinion_text.send_keys(input('Input your opinion_text:'))
 
-     except Exception as ex:
-          print(ex)
+     # except Exception as ex:
+     #      print(ex)
 
      # finally:
      #      time.sleep(10)
           # driver.close()
 
 
-main_page_search()
-writing_comment()
+# main_page_search()
+# writing_comment()
 
 
