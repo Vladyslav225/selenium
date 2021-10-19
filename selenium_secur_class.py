@@ -77,9 +77,7 @@ class MainPage_ChoosingProduct:
     @decorator_checking_id
     def element_search(self):
 
-        
         element_search = self.driver.find_element(By.ID, 'search')
-            
         element_search.clear()
         element_search.send_keys('Видеокамера AHD купольная Tecsar AHDD-20V5M-in')
         element_search.send_keys(Keys.ENTER)
@@ -105,27 +103,22 @@ class SearchElementReview_WritingReview:
     def writing_review(self):
 
         name = driver.find_element(By.ID, 'nickname_field')
-
         name.clear()
         name.send_keys('Vlad')
 
         email = driver.find_element(By.ID, 'summary_field')
-
         email.clear()
         email.send_keys('@')
 
         detail = driver.find_element(By.ID, 'review_field')
-
         detail.clear()
         detail.send_keys('Very good')
 
         pluses_product = driver.find_element(By.ID, 'pluses_product')
-
         pluses_product.clear()
         pluses_product.send_keys('Very-very good')
 
         lows_product = driver.find_element(By.ID, 'lows_product')
-
         lows_product.clear()
         lows_product.send_keys('Nope')
 
