@@ -8,7 +8,6 @@ import time
 driver = webdriver.Chrome(executable_path='/home/vladyslav/IT_Step/lesson_25-26/chromedriver')
 
 
-
 def decorator_checking_site(checking_site):
     def checking_main_page(*args, **kwargs):
         try:
@@ -59,7 +58,6 @@ def decorator_cheking_link_text(cheking_link_text):
             exit()
 
     return cheking_element_link_text
-
 
 
 class MainPage_ChoosingProduct:
@@ -144,8 +142,6 @@ class SearchElementReview_WritingReview:
         time.sleep(10)
         driver.close()
         driver.quit()
-
-
 
 
 first_class = MainPage_ChoosingProduct(driver)
