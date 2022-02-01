@@ -28,48 +28,48 @@ def main_page_search():
           print(ex)
 
 
-# def product_page():
+def product_page():
 
-#      try:
+     try:
 
-#           tabs_manu = driver.find_element_by_link_text('Отзывы')
-#           tabs_manu.send_keys(Keys.RETURN)
-#           time.sleep(3)
+          tabs_manu = driver.find_element_by_link_text('Отзывы')
+          tabs_manu.send_keys(Keys.RETURN)
+          time.sleep(3)
 
-#      except Exception as ex:
-#           print(ex)
+     except Exception as ex:
+          print(ex)
 
 
-# def review_form():
+def review_form():
 
-#      try:
+     try:
 
-#           name = driver.find_element_by_id('nickname_field')
-#           name.send_keys('asdd')
+          name = driver.find_element_by_id('nickname_field')
+          name.send_keys('asdd')
 
-#           email = driver.find_element_by_id('summary_field')
-#           email.send_keys('asd')
+          email = driver.find_element_by_id('summary_field')
+          email.send_keys('asd')
 
-#           detail = driver.find_element_by_id('review_field')
-#           detail.send_keys('asd')
+          detail = driver.find_element_by_id('review_field')
+          detail.send_keys('asd')
 
-#           pluses_product = driver.find_element_by_id('pluses_product')
-#           pluses_product.send_keys('asd')
+          pluses_product = driver.find_element_by_id('pluses_product')
+          pluses_product.send_keys('asd')
 
-#           lows_product = driver.find_element_by_id('lows_product')
-#           lows_product.send_keys('asd')
+          lows_product = driver.find_element_by_id('lows_product')
+          lows_product.send_keys('asd')
 
-#           button_send = driver.find_element_by_class_name('btn.btn-silver.btn-review-post.button').click()
-#           # print(button_send.text)
+          button_send = driver.find_element_by_class_name('btn.btn-silver.btn-review-post.button').click()
+          # print(button_send.text)
 
-#      except Exception as ex:
-#           print(ex)
+     except Exception as ex:
+          print(ex)
 
-#      finally:
-#           driver.close()
-#           driver.quit()
+     finally:
+          driver.close()
+          driver.quit()
 
 
 main_page_search()
-# product_page()
-# review_form()
+product_page()
+review_form()
